@@ -1,0 +1,41 @@
+# --- Out-of-tree kernel modul build ciktilari ---
+# Bunlarin hepsi "make" ile yeniden uretilir, repoda durmamali.
+*.o
+*.o.*
+*.ko
+*.ko.*
+*.mod
+*.mod.c
+*.mod.o
+*.a
+*.s
+*.su
+*.symvers
+*.order
+Module.symvers
+modules.order
+modules.builtin*
+.tmp_versions/
+.*.cmd
+.*.d
+*.dwo
+
+# --- Uretilen IDE / clangd dosyalari ---
+# .clangd (konfigurasyon) repoda KALIR, compile_commands.json uretilendir.
+compile_commands.json
+.cache/
+.ccls-cache/
+
+# --- Editor artiklari ---
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# --- Cekirdek derleme sirasinda olusan digerleri ---
+*.rsi
+*.lst
+*.gcno
+*.gcda
+
